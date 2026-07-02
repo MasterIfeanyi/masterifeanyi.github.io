@@ -4,6 +4,17 @@
 # Production
 /build
 
+# Dependencies
+node_modules
+
+# Build output
+build
+.docusaurus
+
+# Misc
+.DS_Store
+.env
+
 # Generated files
 .docusaurus
 .cache-loader
