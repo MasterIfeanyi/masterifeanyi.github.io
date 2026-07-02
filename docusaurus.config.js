@@ -13,6 +13,7 @@ const config = {
   title: 'Tech Trips',
   tagline: 'Ubuntu',
   favicon: 'img/favicon.ico',
+  trailingSlash: true,
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
