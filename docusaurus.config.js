@@ -48,7 +48,7 @@ const config = {
       ({
         docs: false,
         blog: {
-          routeBasePath: 'blog', // makes the blog the main content, could also set to '/' to make it the homepage
+          routeBasePath: '/', // makes the blog the main content, could also set to '/' to make it the homepage
           blogTitle: 'Blog',
           blogDescription: 'Notes from a Self-taught Dev',
           showReadingTime: true,
@@ -85,28 +85,20 @@ const config = {
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
+          href:'/'
         },
         items: [
-          {to: '/blog', label: 'Posts', position: 'left'},
+          {to: '/', label: 'Posts', position: 'left'},
           {
             href: 'https://github.com/masterifeanyi',
-            label: 'GitHub',
             position: 'right',
+            className: "header-github-link",
+            "aria-label": "GitHub profile",
           },
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'My Socials',
-            items: [
-              { label: 'GitHub', href: 'https://github.com/masterifeanyi' },
-              { label: 'Medium', href: 'https://medium.com/@ifeanyitchima' },
-              { label: 'Behance', href: 'https://behance.net/@ifeanyichima' },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Ifeanyi. Built with Docusaurus.`,
       },
       prism: {
